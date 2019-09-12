@@ -6,6 +6,9 @@ y = np.sin(x)
 z = np.cos(x)
 
 plt.plot(x,y,x,z)
-plt.legend(['sin(x)', 'cos(x)'])
-plt.title("Sin and Cosine One Period")
+
+tan_y = np.tan(x)
+plt.plot(x, tan_y)
+plt.legend(['sin(x)', 'cos(x)', 'tan(x)'])
+plt.title("Sin, Cosine, and Tangent One Period")
 plt.show()
