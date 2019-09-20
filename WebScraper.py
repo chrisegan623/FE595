@@ -5,7 +5,7 @@ url  = "http://theyfightcrime.org"
 male= list()
 female = list()
 
-def my_func(url):
+def webscrape(url):
         request = requests.get(url)
         text = request.text
         text = text.split('<P>')
@@ -18,7 +18,7 @@ def my_func(url):
 if __name__ == '__main__':
     count = 0
     while count < 50:
-        my_func(url)
+        webscrape(url)
         time.sleep(2)
         count += 1
 
