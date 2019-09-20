@@ -4,8 +4,6 @@ import time as time
 url  = "http://theyfightcrime.org"
 male= list()
 female = list()
-text = list()
-request = list()
 
 def my_func(url):
         request = requests.get(url)
