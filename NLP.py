@@ -97,7 +97,7 @@ if __name__ == '__main__':
         count.append(adjectives.count(adjectives[i]))
 
     count_df = pd.DataFrame()
-    count_df['Decriptor'] = adjectives
+    count_df['Descriptor'] = adjectives
     count_df['Count'] = count
 
     sorted_count = count_df.sort_values('Count')
